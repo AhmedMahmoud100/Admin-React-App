@@ -3,14 +3,13 @@ import SideBar from '../../Components/SideBar/SideBar'
 import Chart from '../../Components/chart/Chart'
 import MainTable from '../../Components/table/Table'
 import './Single.scss'
+import Cards from '../../Components/cards/Cards'
+
 
 
 export default function Single() {
   return (
     <div className="single">
-      <SideBar />
-      <div className="singleContainer">
-        <NavBar />
         <div className="top">
           <div className="left">
             <div className="editButton">Edit</div>
@@ -45,14 +44,14 @@ export default function Single() {
             </div>
           </div>
           <div className="right">
-            <Chart aspect={3 / 1} title ="User Spending ( Last 6 Months)" />
+            <Chart title ="User Spending ( Last 6 Months)" />
           </div>
         </div>
         <div className="bottom">
-        <h1 className="title">Last Transactions</h1>
+        <h1 className="title">Latest Transactions</h1>
           <MainTable/>
+          <Cards />     
         </div>
       </div>
-    </div>
   )
 }

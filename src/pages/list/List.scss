@@ -1,8 +1,21 @@
-.list {
-    display: flex;
-    width: 100%;
 
-    .listContainer {
-        flex: 6;
-    }
-}
+    .datatableTitle{
+        font-size: 24px;
+        color: gray;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 20px 0;
+    
+        .link{
+          text-decoration: none;
+          color: green;
+          font-size: 16px;
+          font-weight: bold;
+          border: 1px solid green;
+          padding: 5px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }

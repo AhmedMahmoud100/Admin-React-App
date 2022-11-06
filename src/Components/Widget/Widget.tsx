@@ -17,7 +17,8 @@ export default function Widget({ type }: { type: string }) {
       />
     ),
   };
-  const amount = 100;
+  const amount = "4.6k";
+  const number = 100
   const diff = 20;
 
   switch (type) {
@@ -75,18 +76,18 @@ export default function Widget({ type }: { type: string }) {
 
   return (
     <div className="widget">
-      <section className="left">
+      <section className="up">
         <h2>{data.title}</h2>
-        <span className="counter">
-          {data.isMoney && "$"} {amount}
-        </span>
-        <span className="link">{data.link}</span>
-      </section>
-      <section className="right">
         <div className="percentage positive">
           <KeyboardArrowUpOutlinedIcon />
           {diff} %
         </div>
+      </section>
+      <span className="counter">
+          {data.isMoney ? `$${amount}`: number } 
+        </span>
+      <section className="down">
+      <span className="link">{data.link}</span>
         {data.icon}
       </section>
     </div>

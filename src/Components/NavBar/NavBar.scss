@@ -18,6 +18,7 @@ nav {
             align-items: center;
             border: 0.5px solid lightgray;
             padding: 3px;
+            border-radius: 5px;
         }
 
         input {
@@ -44,6 +45,7 @@ nav {
 
             .icon {
                 font-size: 20px;
+                cursor: pointer;
             }
 
             .avatar {
@@ -67,6 +69,32 @@ nav {
                 top: -4px;
                 right: -4px;
             }
+        }
+    }
+}
+
+@media(max-width:798px){
+    nav{
+        height: auto;
+        justify-content: center;
+        .wrapper{
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            padding: 10px 0px;
+        }
+        .items {
+            .item {
+                .icon {
+                    font-size: 18px
+                }
+    
+                .avatar {
+                    width: 27px;
+                    height: 27px;
+                }
+            }
+            
         }
     }
 }

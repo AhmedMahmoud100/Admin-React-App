@@ -4,6 +4,10 @@
     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
     padding: 10px;
     color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(201, 201, 201, 0.7);
 
     .title {
         margin-bottom: 20px;
@@ -11,5 +15,44 @@
 
     .chartGrid {
         stroke: rgb(228, 225, 225);
+    }
+
+    .chart-style {
+        width: 730px;
+        height: 300px;
+       
+        }
+}
+
+@media(max-width:1200px){
+    .chart {
+        flex: 3;
+        justify-content: center;
+        .chart-style {
+            width: 450px;
+        }
+    }
+}
+@media(max-width:998px){
+    .chart {
+        .chart-style {
+            width: 600px;
+        }
+    }
+}
+@media(max-width:798px){
+    .chart {
+        .chart-style {
+            width: 400px;
+            height: 250px;
+        }
+    }
+}
+@media(max-width:500px){
+    .chart {
+        .chart-style {
+            width: 250px;
+            height: 150px;
+        }
     }
 }

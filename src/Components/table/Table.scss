@@ -1,7 +1,10 @@
 .table {
+  border: 1px solid rgba(201, 201, 201, 0.7);
+  
     .cellWrapper {
       display: flex;
       align-items: center;
+      
   
       .image {
         width: 32px;
@@ -24,5 +27,10 @@
         color: goldenrod;
         background-color: rgba(189, 189, 3, 0.103);
       }
+    }
+  }
+  @media(max-width:998px){
+    .table {
+      display: none;
     }
   }

@@ -1,16 +1,18 @@
+import UsersCard from '../../Components/cards/UsersCard'
 import DataTable from '../../Components/datatable/DataTable'
-import NavBar from '../../Components/NavBar/NavBar'
-import SideBar from '../../Components/SideBar/SideBar'
 import './List.scss'
-
+import { Link } from "react-router-dom";
 export default function List() {
   return (
-    <div className='list'>
-      <SideBar />
-      <div className="listContainer">
-        <NavBar />
-        <DataTable />
+    <>
+     <div className="datatableTitle">
+        Add New User
+        <Link to="/users/new" className="link">
+          Add New
+        </Link>
       </div>
-    </div>
+      <DataTable />
+      <UsersCard />
+      </>
   )
 }

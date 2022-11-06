@@ -1,35 +1,23 @@
 .widget {
    display: flex;
+   flex-direction: column;
    justify-content: space-between;
    flex: 1;
    padding: 10px;
    -webkit-box-shadow : 2px 4px 10px 1px rgba(0, 0, 0, 0.47) ;
    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
    border-radius: 10px;
-   height: 100px;
    font-weight: bold;
+   border: 1px solid rgba(201, 201, 201, 0.7);
 
-   .left,.right {
+   .up {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 
     h2 {
         font-weight: bold;
-        font-size: 14px;
-        color: rgb(160, 160, 160);
+        font-size: 15px;
     }
-
-    .counter {
-        font-size: 28px;
-        font-weight: 300;
-    }
-
-    .link {
-        width: max-content;
-        font-size: 12px;
-        border-bottom: 1px solid gray ;
-    } 
 
     .percentage {
         display: flex;
@@ -43,12 +31,50 @@
             color: red;
         }
     }
-
-    .icon {
-        font-size: 18px;
-        padding: 5px;
-        border-radius: 5px;
-        align-self: flex-end;
+    
     }
+    .counter {
+        font-size: 20px;
+        font-weight: 400;
+    } 
+    .down {
+         display: flex;
+         justify-content: space-between;
+         align-items: center; 
+         color: rgb(160, 160, 160); 
+
+        .link {
+            width: max-content;
+            font-size: 12px;
+        } 
+        .icon {
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+    
    }
+@media(max-width:798px){
+    .widget {
+        .up {
+            h2 {
+                font-size: 13px;
+            }
+            .percentage {
+                font-size: 12px;
+            }
+        }
+        .counter {
+            font-size: 16px;
+        }
+        .down {
+            .link {
+                font-size: 11px;
+            }
+            .icon {
+                font-size: 15px;
+            }
+        }
+    }
 }

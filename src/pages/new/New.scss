@@ -1,77 +1,89 @@
 .new {
-    width: 100%;
+  flex: 6;
+
+  h2 {
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid rgba(201, 201, 201, 0.7);
+    text-align: center;
+  }
+
+  .main-section {
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 10px;
+    margin: 20px;
     display: flex;
-  
-    .newContainer {
-      flex: 6;
-  
-      .top,
-      .bottom {
-        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(201, 201, 201, 0.7);
+
+    .top {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      padding-left: 23px;
+
+      .uploadInput {
+        .fileLabel {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          cursor: pointer;
+        }
+
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+    }
+
+    .bottom {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+      gap: 30px;
+
+      .formInput {
+        margin: 0 20px;
+
+        label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .icon {
+            cursor: pointer;
+          }
+        }
+
+        input {
+          width: 100%;
+          padding: 5px;
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+      }
+
+      button {
+        width: calc(100% - 30px);
         padding: 10px;
-        margin: 20px;
-        display: flex;
-  
-        h1 {
-          color: lightgray;
-          font-size: 20px;
-        }
-  
-        .left {
-          flex: 1;
-          text-align: center;
-  
-          img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-          }
-        }
-  
-        .right {
-          flex: 2;
-  
-          form {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: space-around;
-  
-            .formInput {
-              width: 40%;
-  
-              label {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-  
-                .icon {
-                  cursor: pointer;
-                }
-              }
-  
-              input {
-                width: 100%;
-                padding: 5px;
-                border: none;
-                border-bottom: 1px solid gray;
-              }
-            }
-  
-            button {
-              width: 150px;
-              padding: 10px;
-              border: none;
-              background-color: teal;
-              color: white;
-              font-weight: bold;
-              cursor: pointer;
-              margin-top: 10px;
-            }
-          }
-        }
+        border: none;
+        background-color: teal;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0 20px 20px;
       }
     }
   }
+}

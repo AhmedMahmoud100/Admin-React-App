@@ -67,7 +67,7 @@ export default function Cards() {
   return (
     <div className='cardsContainer'>
              {rows.map((e) => {
-                return <div className='card' key={e.id}>
+                return <div className='card shadow' key={e.id}>
                           <div>
                             <span>id: </span>
                             <span>{e.id}</span>

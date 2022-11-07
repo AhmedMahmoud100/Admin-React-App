@@ -6,8 +6,8 @@ export default function New({ inputs, title }: any) {
 
   return (
     <div className="new">
-      <h2>{title}</h2>
-      <section className="main-section">
+      <h2 className='shadow'>{title}</h2>
+      <section className="main-section shadow">
         <div className="top">
           <img
             src={

@@ -2,7 +2,7 @@ import UsersCard from '../../Components/cards/UsersCard'
 import DataTable from '../../Components/datatable/DataTable'
 import './List.scss'
 import { Link } from "react-router-dom";
-export default function List() {
+export default function UsersList() {
   return (
     <>
      <div className="datatableTitle">

@@ -7,7 +7,7 @@ import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDown
 import "react-circular-progressbar/dist/styles.css"
 export default function Featured() {
   return (
-    <div className='featured'>
+    <div className='featured shadow'>
       <section className="top">
         <h3> Total Revenue</h3>
         <MoreVertOutlinedIcon fontSize='small' />

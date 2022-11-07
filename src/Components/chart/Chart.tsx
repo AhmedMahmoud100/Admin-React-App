@@ -18,7 +18,7 @@ export default function Chart({  title }: {  title: string }) {
   ];
 
   return (
-    <div className="chart">
+    <div className="chart shadow">
       <h3 className="title">{title}</h3>
      
       <div className="chart-style">

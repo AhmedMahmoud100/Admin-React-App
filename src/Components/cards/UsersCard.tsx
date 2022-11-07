@@ -12,7 +12,7 @@ export default function UsersCard() {
     return (
         <div className='cardsContainer'>
             {data.map((e) => {
-                return <div className='card' key={e.id}>
+                return <div className='card shadow' key={e.id}>
                     <div>
                         <span className='title'>id: </span>
                         <span>{e.id}</span>
@@ -41,14 +41,14 @@ export default function UsersCard() {
                         <span>Action: </span>
                         <section className="cellAction">
                             <Link to="/users/test" style={{ textDecoration: "none" }}>
-                                <div className="viewButton">View</div>
+                                <button className="viewButton">View</button>
                             </Link>
-                            <div
+                            <button
                                 className="deleteButton"
                                 onClick={() => handleDelete(e.id)}
                             >
                                 Delete
-                            </div>
+                            </button>
                         </section>
                     </div>
                 </div>

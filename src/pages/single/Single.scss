@@ -11,11 +11,8 @@
 
     .left {
       flex: 1;
-      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
       padding: 20px;
       position: relative;
-      border: 1px solid rgba(201, 201, 201, 0.7);
 
       .editButton {
         position: absolute;
@@ -70,11 +67,8 @@
   }
 
   .bottom {
-    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
-    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
     margin: 20px;
     padding: 20px;
-    border: 1px solid rgba(201, 201, 201, 0.7);
 
     .title {
       color: black;

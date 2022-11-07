@@ -75,7 +75,7 @@ export default function Widget({ type }: { type: string }) {
   }
 
   return (
-    <div className="widget">
+    <div className="widget shadow">
       <section className="up">
         <h2>{data.title}</h2>
         <div className="percentage positive">

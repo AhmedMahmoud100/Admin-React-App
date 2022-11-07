@@ -18,7 +18,7 @@ export default function Home() {
         <Featured />
         <Chart  title="Last 6 Months (Revenue)" />
       </div>
-      <div className="listContainer">
+      <div className="listContainer shadow">
         <h3>Latest Transactions</h3>
         <MainTable />
       </div>

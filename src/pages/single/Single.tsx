@@ -1,17 +1,14 @@
-import NavBar from '../../Components/NavBar/NavBar'
-import SideBar from '../../Components/SideBar/SideBar'
 import Chart from '../../Components/chart/Chart'
 import MainTable from '../../Components/table/Table'
 import './Single.scss'
 import Cards from '../../Components/cards/Cards'
 
 
-
 export default function Single() {
   return (
     <div className="single">
         <div className="top">
-          <div className="left">
+          <div className="left shadow">
             <div className="editButton">Edit</div>
             <h1 className="title">Information</h1>
             <div className="item">
@@ -47,7 +44,7 @@ export default function Single() {
             <Chart title ="User Spending ( Last 6 Months)" />
           </div>
         </div>
-        <div className="bottom">
+        <div className="bottom shadow">
         <h1 className="title">Latest Transactions</h1>
           <MainTable/>
           <Cards />     

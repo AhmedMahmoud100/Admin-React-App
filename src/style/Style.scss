@@ -2,9 +2,25 @@
   display: flex;
   position: relative;
 
+  input {
+    outline: none;
+  }
+
+  .shadow {
+    -webkit-box-shadow: 2px 4px 10px 1px rgb(0 0 0 / 47%);
+    box-shadow: 2px 4px 10px 1px rgb(201 201 201 / 47%);
+    border: 1px solid rgba(201, 201, 201, 0.7);
+  }
+
   &.dark {
     background-color: #111;
     color: rgb(156, 156, 156);
+
+    .shadow {
+      -webkit-box-shadow: 2px 4px 10px 1px rgb(110 110 110 / 47%);
+      box-shadow: 2px 4px 10px 1px rgb(110 110 110 / 47%) 1px solid rgb(83 82 82 / 70%);
+      border: 1px solid rgba(201, 201, 201, 0.3);
+    }
 
     .chartGrid {
       stroke: rgba(228, 228, 228, 0.219)
@@ -102,6 +118,15 @@
     }
 
     .cardsContainer {
+
+      .card div {
+        border-bottom: 1px solid rgba(201, 201, 201, 0.4);
+
+        &> :first-child {
+          opacity: 0.8;
+        }
+      }
+
       .cellWithStatus {
         &.active {
           background-color: rgb(30 29 29);
@@ -128,6 +153,10 @@
       }
     }
 
+    .table {
+      border: 1px solid rgba(201, 201, 201, 0.4);
+    }
+
     // class of datatable headerbuttons
     .css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root {
       color: gray !important;
@@ -138,6 +167,26 @@
     .css-rtrcn9-MuiTablePagination-root {
       color: gray !important;
     }
+
+    .css-1e2bxag-MuiDataGrid-root .MuiDataGrid-cell {
+      border-bottom: 1px solid rgba(201, 201, 201, 0.3);
+    }
+
+    .css-f3jnds-MuiDataGrid-columnHeaders {
+      border-bottom: 1px solid rgba(201, 201, 201, 0.3);
+    }
+
+    .css-i4bv87-MuiSvgIcon-root {
+      color: gray;
+    }
+
+    .css-1ygcj2i-MuiTableCell-root {
+      border-bottom: 1px solid rgba(201, 201, 201, 0.3);
+    }
+
+    .css-1ex1afd-MuiTableCell-root {
+      border-bottom: 1px solid rgba(201, 201, 201, 0.3);
+    }
   }
 
   main {
@@ -146,7 +195,8 @@
     flex-direction: column;
   }
 }
+
 // class of datatable headercells left-border
 .css-1e2bxag-MuiDataGrid-root .MuiDataGrid-iconSeparator {
-  display: none ;
+  display: none;
 }

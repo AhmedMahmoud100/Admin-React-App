@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 export default function SideBar({ dark, setMode }: any) {
-  const [darkmode, setdarkmode] = useState(false)
+  const [darkmode, setdarkmode] = useState(true)
   const [menu, setmenu] = useState(false)
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function SideBar({ dark, setMode }: any) {
       <aside className={menu ? "active" : "disable"}>
         <section className='top'>
           <Link to='/' onClick={() => setmenu(false)}>
-            <span className="logo">lamadmin</span>
+            <span className="logo">Admin </span>
           </Link>
         </section>
         <hr />

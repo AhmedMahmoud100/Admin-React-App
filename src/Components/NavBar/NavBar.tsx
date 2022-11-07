@@ -10,7 +10,7 @@ import avatar from '/avatar.jpg'
 import { useState, useEffect } from 'react';
 
 export default function NavBar({ dark, setMode }: any) {
-  const [darkmode, setdarkmode] = useState(false)
+  const [darkmode, setdarkmode] = useState(true)
 
   useEffect(() => {
     dark(darkmode)

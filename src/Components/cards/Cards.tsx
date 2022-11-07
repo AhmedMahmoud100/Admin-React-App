@@ -98,7 +98,7 @@ export default function Cards() {
                           </div>
                           <div>
                             <span>status: </span>
-                            <span className={`status ${e.status}`}>{e.status}</span>
+                            <span className={`cellWithStatus ${e.status}`}>{e.status}</span>
                           </div>
                         
                 </div>   

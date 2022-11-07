@@ -23,11 +23,13 @@
             
             &>:first-child {
                 font-weight: bold ;
+                padding-bottom: 5px;
           }
 
 
             &>:last-child {
                   opacity: 0.8; ;
+                  padding-bottom: 5px;
             }
 
             figure {
@@ -65,7 +67,7 @@
             border-radius: 50%;
         }
 
-        .status {
+        .cellWithStatus {
             padding: 5px;
             border-radius: 5px;
         
@@ -77,17 +79,22 @@
               color: goldenrod;
               background-color: rgba(189, 189, 3, 0.103);
             }
+            &.active {
+              background-color: rgba(0, 128, 0, 0.05);
+              color: green;
+            }
+            &.pending {
+              background-color: rgba(255, 217, 0, 0.05);
+              color: goldenrod;
+            }
+            &.passive {
+              background-color: rgba(255, 0, 0, 0.05);
+              color: crimson;
+            }
           }
     }
     
 }
-// @media(max-width:1200px){
-//   .cardsContainer.users{
-//     display: flex;
-//   }
-// }
-
-
 
 @media(max-width:998px){
     .cardsContainer{

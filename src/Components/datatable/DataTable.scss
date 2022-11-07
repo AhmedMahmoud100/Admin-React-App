@@ -2,6 +2,8 @@
     height: 600px;
     padding: 20px;
     flex: 6;
+    color: red;
+  
    
     .cellWithImg {
       display: flex;
@@ -55,6 +57,7 @@
         cursor: pointer;
       }
     }
+    
   }
 @media(max-width:998px){
   .datatable{

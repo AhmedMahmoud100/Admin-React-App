@@ -1,81 +1,152 @@
 .app {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 
-    &.dark {
-        background-color: #111;
-        color: rgb(156, 156, 156);
-      
-        .chartGrid {
-          stroke : rgba(228, 228, 228, 0.219)
-        }
-      
-        .table {
-          background-color: #111;
-      
-          .tableCell {
-            color: gray;
-          }
-        }
-        nav {
+  &.dark {
+    background-color: #111;
+    color: rgb(156, 156, 156);
+
+    .chartGrid {
+      stroke: rgba(228, 228, 228, 0.219)
+    }
+
+    .table {
+      background-color: #111;
+
+      .tableCell {
+        color: gray;
+      }
+    }
+
+    nav {
+      color: #999;
+      border-color: #333;
+
+      .search {
+        border-color: gray;
+      }
+    }
+
+    aside {
+      background-color: #111;
+      border-color: #333;
+
+
+      .top {
+        .logo {
           color: #999;
-          border-color: #333;
-      
-          .search{
-              border-color: gray;
-          }
         }
-        aside {
-          background-color: #111;
-          border-color: #333;
+      }
 
-      
-          .top {
-              .logo {
-                  color: #999;
-              }
+      hr {
+        border-color: #333;
+      }
+
+      ul {
+        li {
+          &:hover {
+            background-color: #333;
           }
-          hr {
-              border-color: #333;
+
+          .icon {
+            color: #999;
           }
-          ul {
-              li {
-                  &:hover {
-                      background-color: #333;
-                  }
-      
-                  .icon {
-                      color: #999;
-                  }
-              }
-          }
-        }
-       
-        .datatable {
-          .datagrid {
-              color: gray;
-              border: none;
-      
-              .viewButton,.deleteButton,.cellWithStatus {
-                  color: gray;
-                  border: none;
-              }
-          }
-        }
-        input {
-          background-color: transparent;
-        }
-        .menu {
-          p { 
-            background-color: rgb(156, 156, 156)
-          }
-          
         }
       }
-      main {
-        flex: 6;
-        display: flex;
-        flex-direction: column;
+    }
+
+    .datatable {
+      border: 1px solid rgb(111, 111, 111);
+
+      .datagrid {
+        color: gray;
+        border: none;
+
+        .cellWithStatus {
+          &.active {
+            background-color: rgb(30 29 29);
+          }
+
+          &.passive {
+            background-color: rgb(30 29 29);
+          }
+
+          &.pending {
+            background-color: rgb(30 29 29);
+          }
+        }
+
+        .viewButton {
+          color: blue !important;
+          background-color: rgb(30 29 29);
+          padding: 2px;
+        }
+
+        .deleteButton {
+          color: crimson;
+          background-color: rgb(30 29 29);
+          padding: 2px;
+        }
       }
+    }
+
+    input {
+      background-color: transparent;
+      color: white;
+    }
+
+    .menu {
+      p {
+        background-color: rgb(156, 156, 156)
+      }
+    }
+
+    .cardsContainer {
+      .cellWithStatus {
+        &.active {
+          background-color: rgb(30 29 29);
+        }
+
+        &.passive {
+          background-color: rgb(30 29 29);
+        }
+
+        &.pending {
+          background-color: rgb(30 29 29);
+        }
+      }
+
+      .viewButton {
+        color: blue !important;
+        background-color: rgb(30 29 29);
+        padding: 2px !important;
+      }
+
+      .deleteButton {
+        background-color: rgb(30 29 29);
+        padding: 2px !important;
+      }
+    }
+
+    // class of datatable headerbuttons
+    .css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root {
+      color: gray !important;
+
+    }
+
+    // class of datatable footer
+    .css-rtrcn9-MuiTablePagination-root {
+      color: gray !important;
+    }
+  }
+
+  main {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+  }
 }
-
+// class of datatable headercells left-border
+.css-1e2bxag-MuiDataGrid-root .MuiDataGrid-iconSeparator {
+  display: none ;
+}

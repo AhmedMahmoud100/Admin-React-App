@@ -15,7 +15,7 @@ import NavBar from './Components/NavBar/NavBar';
 import SideBar from './Components/SideBar/SideBar';
 
 function App() {
-  const [dark, setDark] = useState(false)
+  const [dark, setDark] = useState(true)
 
   return (
     <div className={dark ? "app dark" : "app"}>

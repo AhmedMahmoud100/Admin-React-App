@@ -2,6 +2,12 @@
   display: flex;
   position: relative;
 
+  main {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+  }
+
   input {
     outline: none;
   }
@@ -10,6 +16,11 @@
     -webkit-box-shadow: 2px 4px 10px 1px rgb(0 0 0 / 47%);
     box-shadow: 2px 4px 10px 1px rgb(201 201 201 / 47%);
     border: 1px solid rgba(201, 201, 201, 0.7);
+  }
+
+  // class of datatable headercells left-border
+  .css-1e2bxag-MuiDataGrid-root .MuiDataGrid-iconSeparator {
+    display: none;
   }
 
   &.dark {
@@ -168,35 +179,29 @@
       color: gray !important;
     }
 
+    // class of dataTable rows
     .css-1e2bxag-MuiDataGrid-root .MuiDataGrid-cell {
       border-bottom: 1px solid rgba(201, 201, 201, 0.3);
     }
 
+    // class of dataTable header
     .css-f3jnds-MuiDataGrid-columnHeaders {
       border-bottom: 1px solid rgba(201, 201, 201, 0.3);
     }
 
+    // class of dataTable icons
     .css-i4bv87-MuiSvgIcon-root {
       color: gray;
     }
 
+    // class of mainTable header
     .css-1ygcj2i-MuiTableCell-root {
       border-bottom: 1px solid rgba(201, 201, 201, 0.3);
     }
 
+    // class of mainTable rows
     .css-1ex1afd-MuiTableCell-root {
       border-bottom: 1px solid rgba(201, 201, 201, 0.3);
     }
   }
-
-  main {
-    flex: 6;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-// class of datatable headercells left-border
-.css-1e2bxag-MuiDataGrid-root .MuiDataGrid-iconSeparator {
-  display: none;
 }

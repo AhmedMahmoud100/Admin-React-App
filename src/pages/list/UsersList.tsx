@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function UsersList() {
   return (
     <>
-     <div className="datatableTitle">
+      <div className="datatableTitle">
         Add New User
         <Link to="/users/new" className="link">
           Add New
@@ -13,6 +13,6 @@ export default function UsersList() {
       </div>
       <DataTable />
       <UsersCard />
-      </>
+    </>
   )
 }

@@ -17,27 +17,29 @@
     .chart-style {
         width: 730px;
         height: 300px;
-       
-        }
+    }
 }
 
-@media(max-width:1200px){
+@media(max-width:1200px) {
     .chart {
         flex: 3;
         justify-content: center;
+
         .chart-style {
             width: 450px;
         }
     }
 }
-@media(max-width:998px){
+
+@media(max-width:998px) {
     .chart {
         .chart-style {
             width: 600px;
         }
     }
 }
-@media(max-width:798px){
+
+@media(max-width:798px) {
     .chart {
         .chart-style {
             width: 400px;
@@ -45,7 +47,8 @@
         }
     }
 }
-@media(max-width:500px){
+
+@media(max-width:500px) {
     .chart {
         .chart-style {
             width: 250px;

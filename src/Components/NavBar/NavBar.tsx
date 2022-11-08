@@ -9,7 +9,11 @@ import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
 import avatar from '/avatar.jpg'
 import { useState, useEffect } from 'react';
 
-export default function NavBar({ dark, setMode }: any) {
+type NavBarPropsType = {
+  dark: React.Dispatch<React.SetStateAction<boolean>>,
+  setMode: boolean
+}
+export default function NavBar({ dark, setMode }: NavBarPropsType) {
   const [darkmode, setdarkmode] = useState(true)
 
   useEffect(() => {

@@ -1,74 +1,83 @@
 .widget {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   flex: 1;
-   padding: 10px;
-   border-radius: 10px;
-   font-weight: bold;
-
-   .up {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
 
-    h2 {
-        font-weight: bold;
-        font-size: 15px;
-    }
-
-    .percentage {
+    .up {
         display: flex;
-        align-items: center;
-        font-size: 14px;
+        justify-content: space-between;
 
-        &.positive {
-            color: green;
+        h2 {
+            font-weight: bold;
+            font-size: 13px;
         }
-        &.negative {
-            color: red;
+
+        .percentage {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+
+            &.positive {
+                color: green;
+            }
+
+            &.negative {
+                color: red;
+            }
         }
+
     }
-    
-    }
+
     .counter {
         font-size: 20px;
         font-weight: 400;
-    } 
+    }
+
     .down {
-         display: flex;
-         justify-content: space-between;
-         align-items: center; 
-         color: rgb(160, 160, 160); 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgb(160, 160, 160);
 
         .link {
             width: max-content;
             font-size: 12px;
-        } 
+        }
+
         .icon {
             font-size: 18px;
             padding: 5px;
             border-radius: 5px;
         }
     }
-    
-   }
-@media(max-width:798px){
+
+}
+
+@media(max-width:798px) {
     .widget {
         .up {
             h2 {
                 font-size: 13px;
             }
+
             .percentage {
                 font-size: 12px;
             }
         }
+
         .counter {
             font-size: 16px;
         }
+
         .down {
             .link {
                 font-size: 11px;
             }
+
             .icon {
                 font-size: 15px;
             }

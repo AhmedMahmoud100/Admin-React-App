@@ -1,7 +1,6 @@
 import Home from './pages/home/Home';
 import ProductsList from './pages/List/ProductsList';
 import UsersList from './pages/List/UsersList';
-import Login from './pages/login/Login';
 import New from './pages/new/New';
 import Single from './pages/single/Single';
 import './style/Style.scss'
@@ -23,13 +22,12 @@ function App() {
 
       <BrowserRouter>
         <SideBar dark={setDark} setMode={dark} />
-       
+
         <main >
-        <NavBar dark={setDark} setMode={dark}/>
+          <NavBar dark={setDark} setMode={dark} />
 
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/login' element={<Login />} />
             <Route path='/users' element={<UsersList />} />
             <Route path='/users/:userId' element={<Single />} />
             <Route path='/users/new' element={<New inputs={userInputs} title="Add New User" />} />

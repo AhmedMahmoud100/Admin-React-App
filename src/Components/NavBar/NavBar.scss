@@ -1,6 +1,6 @@
 nav {
     height: 50px;
-    border-bottom:  0.5px solid rgb(230, 227, 227);
+    border-bottom: 0.5px solid rgb(230, 227, 227);
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -22,14 +22,14 @@ nav {
         }
 
         input {
-           border: none;
-           outline: none;
-           background-color: transparent;
+            border: none;
+            outline: none;
+            background-color: transparent;
 
-           &::placeholder {
-            font-size: 12px;
+            &::placeholder {
+                font-size: 12px;
 
-           }
+            }
         }
     }
 
@@ -43,7 +43,7 @@ nav {
             margin-right: 20px;
             position: relative;
 
-            &:first-child{
+            &:first-child {
                 gap: 5px;
             }
 
@@ -53,9 +53,9 @@ nav {
             }
 
             .avatar {
-              width: 30px ;
-              height: 30px;
-              border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
             }
 
             .counter {
@@ -77,28 +77,29 @@ nav {
     }
 }
 
-@media(max-width:798px){
-    nav{
+@media(max-width:798px) {
+    nav {
         height: auto;
         justify-content: center;
-        .wrapper{
+
+        .wrapper {
             flex-direction: column;
             gap: 10px;
             width: 100%;
             padding: 10px 0px;
         }
+
         .items {
             .item {
                 .icon {
                     font-size: 18px
                 }
-    
+
                 .avatar {
                     width: 27px;
                     height: 27px;
                 }
             }
-            
         }
     }
 }

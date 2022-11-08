@@ -23,7 +23,6 @@ export default function UsersCard() {
                             <img src={e.img} alt=''></img>
                             {e.username}
                         </figure>
-
                     </div>
                     <div>
                         <span>Email: </span>

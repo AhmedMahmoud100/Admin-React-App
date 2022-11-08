@@ -14,7 +14,12 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
-export default function SideBar({ dark, setMode }: any) {
+type SideBarPropsType = {
+  dark: React.Dispatch<React.SetStateAction<boolean>>,
+  setMode: boolean
+}
+
+export default function SideBar({ dark, setMode }: SideBarPropsType) {
   const [darkmode, setdarkmode] = useState(true)
   const [menu, setmenu] = useState(false)
 

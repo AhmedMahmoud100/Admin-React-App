@@ -7,7 +7,6 @@ aside {
     border: 1px solid rgba(201, 201, 201, 0.7);
     transition: 0.5s;
 
-
     .top {
         height: 50px;
         display: flex;
@@ -78,42 +77,46 @@ aside {
             cursor: pointer;
             margin: 5px;
 
-            &:nth-child(1){
+            &:nth-child(1) {
                 background-color: whitesmoke;
             }
-            &:nth-child(2){
+
+            &:nth-child(2) {
                 background-color: #333;
             }
         }
     }
+
     a {
         text-decoration: none;
     }
 }
+
 .menu {
     position: fixed;
     flex-direction: column;
-    gap: 4px ;
+    gap: 4px;
     top: 14px;
     left: 10px;
     display: none;
 
     p {
-       width: 23px;
-       height: 4px;
-       background-color: black;
-
+        width: 23px;
+        height: 4px;
+        background-color: black;
     }
 }
-@media(max-width:798px){
+
+@media(max-width:798px) {
     .menu {
         display: flex;
         cursor: pointer;
     }
+
     aside {
         position: absolute;
         top: 40px;
-        -webkit-box-shadow : 2px 4px 10px 1px rgba(0, 0, 0, 0.47) ;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
         box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
         width: 200px;
         transform: translateX(-105%);

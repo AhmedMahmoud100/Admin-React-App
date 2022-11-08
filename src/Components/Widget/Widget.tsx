@@ -6,6 +6,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 export default function Widget({ type }: { type: string }) {
+  
   let data = {
     title: "USERS",
     isMoney: false,
@@ -84,10 +85,10 @@ export default function Widget({ type }: { type: string }) {
         </div>
       </section>
       <span className="counter">
-          {data.isMoney ? `$${amount}`: number } 
-        </span>
+        {data.isMoney ? `$${amount}` : number}
+      </span>
       <section className="down">
-      <span className="link">{data.link}</span>
+        <span className="link">{data.link}</span>
         {data.icon}
       </section>
     </div>

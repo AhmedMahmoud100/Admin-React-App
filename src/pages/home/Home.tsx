@@ -1,4 +1,4 @@
-import Cards from '../../Components/cards/Cards'
+import MainTableCards from '../../Components/cards/MainTableCards'
 import Chart from '../../Components/chart/Chart'
 import Featured from '../../Components/featured/Featured'
 import MainTable from '../../Components/table/Table'
@@ -16,13 +16,13 @@ export default function Home() {
       </div>
       <div className='charts'>
         <Featured />
-        <Chart  title="Last 6 Months (Revenue)" />
+        <Chart title="Last 6 Months (Revenue)" />
       </div>
       <div className="listContainer shadow">
         <h3>Latest Transactions</h3>
         <MainTable />
       </div>
-      <Cards/>
+      <MainTableCards />
     </div>
   )
 }

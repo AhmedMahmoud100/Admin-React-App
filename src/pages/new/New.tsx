@@ -36,20 +36,20 @@ export default function New({ inputs, title }: any) {
             />
           </div>
         </div>
-        
-          <form className='bottom'>
-            {inputs.map((input: any) => (
-              <div className="formInput" key={input.id}>
-                <label>{input.label}</label>
-                <input type={input.type} placeholder={input.placeholder} />
-              </div>
-            ))}
-            
-            <button>Send</button>
-            
-            
-          </form>
-       
+
+        <form className='bottom'>
+          {inputs.map((input: any) => (
+            <div className="formInput" key={input.id}>
+              <label>{input.label}</label>
+              <input type={input.type} placeholder={input.placeholder} />
+            </div>
+          ))}
+
+          <button>Send</button>
+
+
+        </form>
+
       </section>
     </div>
 

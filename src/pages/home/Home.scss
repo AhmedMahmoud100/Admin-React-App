@@ -6,12 +6,14 @@
         padding: 20px;
         gap: 20px;
     }
+
     .widgets {
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
         padding: 20px;
     }
+
     .charts {
         padding: 5px 20px;
     }
@@ -19,18 +21,20 @@
     .listContainer {
         padding: 20px;
         margin: 20px;
-    
+
         h3 {
             color: gray;
             margin-bottom: 15px;
         }
     }
 }
-@media(max-width:998px){
+
+@media(max-width:998px) {
     .home {
         .charts {
             flex-direction: column;
         }
+
         .listContainer {
             h3 {
                 color: black;
@@ -41,10 +45,11 @@
         }
     }
 }
-@media(max-width:798px){
+
+@media(max-width:798px) {
     .home {
         .widgets {
-            grid-template-columns: repeat(2,auto);
+            grid-template-columns: repeat(2, auto);
             gap: 10px;
         }
     }

@@ -7,7 +7,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-export default function Chart({  title }: {  title: string }) {
+export default function Chart({ title }: { title: string }) {
   const data = [
     { name: "January", Total: 1200 },
     { name: "February", Total: 2100 },
@@ -20,12 +20,9 @@ export default function Chart({  title }: {  title: string }) {
   return (
     <div className="chart shadow">
       <h3 className="title">{title}</h3>
-     
       <div className="chart-style">
         <ResponsiveContainer width="100%" >
           <AreaChart
-            // width={730}
-            // height={250}
             data={data}
             margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
           >

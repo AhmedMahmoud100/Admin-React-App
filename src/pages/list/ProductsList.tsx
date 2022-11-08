@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function ProductsList() {
   return (
     <>
-     <div className="datatableTitle">
+      <div className="datatableTitle">
         Add New Product
         <Link to="/products/new" className="link">
           Add New
@@ -13,6 +13,6 @@ export default function ProductsList() {
       </div>
       <DataTable />
       <UsersCard />
-      </>
+    </>
   )
 }
